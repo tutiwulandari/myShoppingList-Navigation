@@ -6,35 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-<!--    <FrameLayout-->
-<!--        android:id="@+id/nav_host_fragment"-->
-<!--        android:layout_width="417dp"-->
-<!--        android:layout_height="611dp"-->
-<!--        android:layout_marginBottom="8dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/navigation"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-
-    <!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="561dp">-->
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="385dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/navigation" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
@@ -55,57 +27,19 @@
 
     </androidx.fragment.app.FragmentContainerView>
 
-    <!--    </RelativeLayout>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="85dp"-->
-<!--        android:layout_marginTop="62dp"-->
-<!--        android:layout_marginBottom="26dp"-->
-<!--        android:text="Create Item"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="20sp" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_create"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="98dp"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="64dp"-->
-<!--        android:layout_marginEnd="223dp"-->
-<!--        android:layout_marginBottom="54dp"-->
-<!--        android:background="@drawable/circle"-->
-<!--        android:drawableTop="@drawable/ic_baseline_add_shopping_cart_24"-->
-<!--        android:gravity="center"-->
-<!--        android:textColor="#fff"-->
-<!--        android:textStyle="bold" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn_list"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="91dp"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="224dp"-->
-<!--        android:layout_marginBottom="60dp"-->
-<!--        android:background="@drawable/circle"-->
-<!--        android:drawableTop="@drawable/ic_baseline_format_list_bulleted_24"-->
-<!--        android:gravity="center"-->
-<!--        android:textColor="#fff"-->
-<!--        android:textStyle="bold" />-->
-
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="230dp"-->
-<!--        android:layout_marginTop="62dp"-->
-<!--        android:layout_marginBottom="26dp"-->
-<!--        android:text="View List"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="20sp" />-->
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="385dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation"
+        app:elevation="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
