@@ -3,37 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_shopping"
-    app:startDestination="@id/navGraph">
+    app:startDestination="@id/addItemFragment">
 
 
-    <fragment
-        android:id="@+id/navGraph"
-        android:name="com.example.shoppinglist_navigation.NavGraph"
-        android:label="fragment_nav_graph"
-        tools:layout="@layout/fragment_nav_graph" >
-        <action
-            android:id="@+id/action_navGraph_to_addItemFragment"
-            app:destination="@id/addItemFragment" />
-        <action
-            android:id="@+id/action_navGraph_to_accFragment2"
-            app:destination="@id/accFragment2" />
-        <action
-            android:id="@+id/action_navGraph_to_listItemFragment"
-            app:destination="@id/listItemFragment" />
-    </fragment>
     <fragment
         android:id="@+id/addItemFragment"
         android:name="com.example.shoppinglist_navigation.AddItemFragment"
         android:label="fragment_add_item"
         tools:layout="@layout/fragment_add_item" />
     <fragment
-        android:id="@+id/accFragment2"
-        android:name="com.example.shoppinglist_navigation.AccFragment"
-        android:label="fragment_acc"
-        tools:layout="@layout/fragment_acc" />
-    <fragment
         android:id="@+id/listItemFragment"
         android:name="com.example.shoppinglist_navigation.ListItemFragment"
         android:label="fragment_list_item"
         tools:layout="@layout/fragment_list_item" />
+    <action
+        android:id="@+id/action_global_addItemFragment"
+        app:destination="@id/addItemFragment"
+        app:launchSingleTop="true"/>
+    <action
+        android:id="@+id/action_global_listItemFragment"
+        app:destination="@id/listItemFragment"
+        app:launchSingleTop="true" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.shoppinglist_navigation.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+<!--    <action-->
+<!--        android:id="@+id/action_global_mainActivity4"-->
+<!--        app:destination="@id/mainActivity"-->
+<!--        app:launchSingleTop="true" />-->
 </navigation>
